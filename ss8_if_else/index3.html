@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /*
+    Phân loại HV
+       Nhập điểm tb
+       Nếu tb >= 9 thì thông báo xuất sắc
+       7 <= tb < 9 thông báo tốt
+       6 <= tb < 7 trung bình
+       tb < 6 yếu
+     */
+
+
+    let diemTB = prompt("Nhap diem trung binh: ")
+
+    if (diemTB >= 9) {
+        document.write("Xuat Sac");
+    } else if (diemTB >= 7) {
+        document.write("Tot");
+    } else if (diemTB >= 6) {
+        document.write("Trung bình")
+    } else {
+        document.write("Yeu")
+    }
+
+    if(diemTB >= 9){
+        document.write("Xuat Sac");
+    }
+    if(diemTB < 9 && diemTB >= 7){
+        document.write("Tot");
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+	<script>
+        /*
+        Cho nguoi dung nhap vao 1 so
+        Neu la so 2 ==> thu 2
+        Neu la so 3 ==> thu 3
+        ...
+        Neu la so 7 ==> thu 7
+        Neu la so 8 ==> CN
+        Neu khong phai cac so tren, thi thong bao loi
+         */
+        let input = +prompt("Nhap vao mot so: "); //nhap thang
+        switch (input){//===
+            case 2: document.write("Thu 2"); break;
+            case 3: document.write("Thu 3"); break;
+            case 4: document.write("Thu 4"); break;
+            case 5: document.write("Thu 5"); break;
+            case 6: document.write("Thu 6"); break;
+            case 7: document.write("Thu 7"); break;
+            case 8: document.write("Chu Nhat"); break;
+            default: document.write("So vua nhap khong hop le");
+        }
+    </script>
+</body>
+</html>
