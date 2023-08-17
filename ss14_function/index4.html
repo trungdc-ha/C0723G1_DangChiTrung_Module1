@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+	<script>
+        let y = 1;
+        function increase(y) {
+            let x = 1; //x là biến cục bộ
+            // let y = 5;
+            ++x;
+            ++y;
+            // document.write(x + "</br>"); //
+            document.write(y + "</br>"); //8
+        }
+        increase(7);
+        document.write(y); //1
+        // document.write(x); //Error
+
+        for(let i = 0; i <10; i++){
+
+        }
+        document.write(i); //Err
+
+    </script>
+</body>
+</html>
