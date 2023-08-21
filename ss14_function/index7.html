@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        // function changeValuePassByReferencer(funNum) {
+        //     funNum[0] = 99;
+        // }
+        //
+        // let arr = [1, 2];
+        // changeValuePassByReferencer(arr); //copy địa chỉ tham chiếu
+        // console.log(arr); //[99, 2]
+
+        function changeValuePassByReferencer(funNum) {
+            let temp = [4, 6];
+            funNum = temp;
+        }
+
+        let arr = [1, 2];
+        changeValuePassByReferencer(arr); //copy địa chỉ tham chiếu
+        console.log(arr); //4, 6
+    </script>
+</body>
+</html>
