@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class DienThoai {
+        constructor(ten, hangSX) {
+            this.ten = ten;
+            this.hangSX = hangSX;
+        }
+
+        goiDien() {
+            document.write(this.ten + " dang goi dien </br>");
+        }
+
+        getTen() {
+            return this.ten;
+        }
+
+        setTen(tenMoi) {
+            this.ten = tenMoi;
+        }
+
+    }
+
+
+    let samsung = new DienThoai("s20", "Samsung");
+    samsung.ten = "S30";
+    samsung.setTen("S30");
+    // console.log(samsung.ten);
+    console.log(samsung.getTen());
+</script>
+</body>
+</html>
