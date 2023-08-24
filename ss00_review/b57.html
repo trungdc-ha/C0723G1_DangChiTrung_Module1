@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = 1;
+    let b = 2;
+
+    // function swap(x, y) {
+    //     let temp = x;
+    //     x = y;
+    //     y = temp;
+    // }
+    // function swap(arr) {
+    //     let temp = arr[0];
+    //     arr[0] = arr[1];
+    //     arr[1] = temp
+    // }
+    // let arrx = [a, b];
+    // let arry = arrx;
+
+    // let objectX = {
+    //     a: 1,
+    //     b: 2
+    // }
+    //
+
+    class NumberAB {
+      constructor(a,b) {
+          this.a = a;
+          this.b = b;
+      }
+
+      getA(){
+          return this.a;
+      }
+
+      setA(value){
+          this.a = value;
+      }
+    }
+    function swap(obj) {
+        let temp = obj.a;
+        obj.a = obj.b;
+        obj.b = temp;
+    }
+    let objectX = new NumberAB(1, 2);
+    console.log('before', objectX);
+    swap(objectX);
+    console.log('after', objectX);
+    prompt()
+
+    // console.log(arry[0]); //1
+    // console.log(arry[1]); //2
+    // console.log(a); //1
+    // console.log(b); //2
+
+    /*
+
+   Tổng kết OOP
+A. Lý thuyết:
+ - Khái niệm lập trình OOP
+ - Class, Object, thuộc tính, hành vi
+ - Constructor
+ - Các tính chất
+	- Khái niệm
+	- Từ khóa tiếng Anh
+	- Cho được ví dụ
+
+B. Thực hành
+ - Xây dựng được class (dùng từ khóa class)
+ - Biết cách khai báo constructor
+ - Triển khai getter, setter (không bắt buộc)
+ - Biết dùng từ khóa new để tạo đối tượng.
+ - Biết gọi được các phương thức/hành vi và thuộc tính của đối tượng.
+
+     */
+</script>
+</body>
+</html>
